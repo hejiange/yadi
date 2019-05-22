@@ -10,4 +10,10 @@ export default {
     }
 }
 </script>
+<style lang="less">
+body{
+    background: red
+}
+</style>
+
 

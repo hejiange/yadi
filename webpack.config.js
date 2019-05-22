@@ -3,6 +3,7 @@ const htmlPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const Clean = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry:'./src/index.js',
     output:{
@@ -25,7 +26,8 @@ module.exports = {
             },
             {
                 test: /\.vue$/,
-                use: ['vue-loader']
+                loader: "vue-loader",
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,

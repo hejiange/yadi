@@ -1,5 +1,5 @@
 <template>
-    <div @click="goto">{{index}}</div>
+    <div @click="goto" class="sss">{{index}}</div>
 </template>
 <script>
 export default {
@@ -15,4 +15,9 @@ export default {
     }
 }
 </script>
+<style lang="less">
+.sss{
+    color: #000;
+}
+</style>
 
